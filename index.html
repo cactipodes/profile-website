@@ -26,21 +26,29 @@
     </main>
 
     <footer>
-        <div>
             <h3>Lets get in touch</h3>
+
             <form class="contact-me">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Jane Sparkles" required>
-
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="jane.sparkles@galaxy.net" required>
-
-                <label>Message</label>
-                <textarea name="message" id="message" rows="10" placeholder="Hi"></textarea>
-
-                <button type="button">Done</button>
+                <div class="contact-child top-left">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Sparkles" required>
+                </div>
+                    
+                <div class="contact-child top-right">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="jane.sparkles@galaxy.net" required>
+                </div>
+                    
+                <div class="contact-child mid">
+                    <label>Message</label>
+                    <textarea name="message" id="message" rows="10" placeholder="Hi"></textarea>
+                </div>
+                    
+                <div class="contact-child last">
+                    <button type="button">Done</button>
+                </div>
+                    
             </form>
-        </div>
 
         <p>This is a website designed and created by Aunyce Ocegueda.</p>
     </footer>
