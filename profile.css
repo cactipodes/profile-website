@@ -27,7 +27,7 @@ body{
     background-color: var(--drk-gry);
 }
 
-/**************header**************/
+/************************header*****************************/
 
 header{
     display: flex;
@@ -43,14 +43,16 @@ header{
 h1{
     color: #fff9f2;
     font-family: Montserrat;
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 3rem;
+    font-size: clamp(2rem, 0.3rem + 4vw, 5rem);
 }
 
-/**************nav***************/
+/***************************nav*******************************/
 
 nav{
     display: flex;
     justify-content: flex-end;
+    padding: 0 2rem 0 0;
 }
 
 a{
@@ -65,34 +67,56 @@ nav li{
     width: 100%;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1260px){
+    h1{
+        padding: 2rem 0 2rem 2.5rem;
+    }
     nav li{
-        margin: 3rem 1rem;
+        margin: 3rem 1.5rem;
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 1070px){
+    h1{
+        padding: 2rem 0 2rem 2.75rem;
+    }
+    nav li{
+        margin: 3rem .75rem;
+    }
+}
+
+@media screen and (max-width: 860px){
+    h1{
+        padding: 2rem 0 2rem 1.25rem;
+    }
+    nav{
+        padding-right: 1rem;
+    }
+    nav li{
+        margin: 3rem .25rem;
+    }
+}
+
+@media screen and (max-width: 650px){
     header{
         flex-direction: column;
-        justify-content: flex-start;
     }
 
     h1{
-        padding: 3rem 0 1rem 0;
-
+        padding: 3rem 1rem 0 2rem;
     }
-
+    nav{
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        align-items: center;
+    }
     nav li{
-        margin: 2rem 1rem;
+        margin: .5rem 1rem;
     }
 }
 
-@media screen and (max-width: 425px){
-    nav li{
-        margin: 2rem .5rem;
-    }
-}
-
+/********************nav buttons*******************/
 /****about button*****/
 .about a{
     color: var(--lt-oj);
@@ -153,4 +177,14 @@ nav:hover .contact a{
 nav .contact a:hover{
     color: var(--lt-prpl);
 }
-/**/
+/******active********/
+.active{
+    border-bottom: 4px solid var(--creamy);
+}
+
+/**************************form***************************/
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+}
