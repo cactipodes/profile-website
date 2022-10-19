@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Just+Another+Hand&family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --oj: #795330;
+    --lt-oj: #FFB068;
+    --lt-red: #FF9797;
+    --red: #865252;
+    --lt-blu: #70C3FF;
+    --blu: #3A5F79;
+    --lt-grn: #86FF9A;
+    --grn: #366B3F;
+    --lt-prpl: #C992FF;
+    --prpl: #674C81;
+    --gry: #272626;
+    --drk-gry: #131212;
+    --creamy: #fff9f2;
+  }
+
+body{
+    width: 100%;
+    background-color: var(--drk-gry);
+}
+
+/**************header**************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: var(--gry);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h1{
+    color: #fff9f2;
+    font-family: Montserrat;
+    padding: 2rem 0 2rem 2rem;
+}
+
+/**************nav***************/
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+    font-family: Cantarell;
+    transition: color .5s;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 3rem 2rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 950px){
+    nav li{
+        margin: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 760px){
+    header{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    h1{
+        padding: 3rem 0 1rem 0;
+
+    }
+
+    nav li{
+        margin: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    nav li{
+        margin: 2rem .5rem;
+    }
+}
+
+/****about button*****/
+.about a{
+    color: var(--lt-oj);
+}
+
+nav:hover .about a{
+    color:var(--oj);
+}
+
+nav .about a:hover{
+    color: var(--lt-oj);
+}
+/**projects button***/
+.projects a{
+    color: var(--lt-red);
+}
+
+nav:hover .projects a{
+    color:var(--red);
+}
+
+nav .projects a:hover{
+    color: var(--lt-red);
+}
+/***papers***/
+.papers a{
+    color: var(--lt-blu);
+}
+
+nav:hover .papers a{
+    color:var(--blu);
+}
+
+nav .papers a:hover{
+    color: var(--lt-blu);
+}
+/***musing button***/
+.musings a{
+    color: var(--lt-grn);
+}
+
+nav:hover .musings a{
+    color:var(--grn);
+}
+
+nav .musings a:hover{
+    color: var(--lt-grn);
+}
+/***contact***/
+.contact a{
+    color: var(--lt-prpl);
+}
+
+nav:hover .contact a{
+    color:var(--prpl);
+}
+
+nav .contact a:hover{
+    color: var(--lt-prpl);
+}
+/**/
