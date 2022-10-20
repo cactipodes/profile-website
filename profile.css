@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Just+Another+Hand&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Kalam&family=Montserrat&display=swap');
 
 *{
     box-sizing: border-box;
@@ -194,10 +194,19 @@ footer{
     background-color: var(--gry);
 }
 
+footer p{
+    font-family: Kalam;
+    color: var(--lt-prpl);
+    text-align: center;
+    margin: 2rem 2rem 0 2rem;
+    padding: 3rem 0;
+    border-top: 4px solid var(--lt-prpl);
+}
+
 /**************************form***************************/
 
 .full-form{
-    padding: 4rem 0;
+    padding: 4rem 2rem 0 2rem;
 }
 
 .contact-me{
@@ -285,7 +294,7 @@ textarea{
 
 .full-form h3{
     margin: 0 2rem;
-    font-family: Cantarell;;
+    font-family: 'Kalam', cursive;
     color: var(--creamy);
     letter-spacing: 3px;
     font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
@@ -296,7 +305,7 @@ textarea{
     flex-direction: column;
 }
 
-/*****************main********************/
+/*****************main/about********************/
 
 .hero-image{
     background-image: url(images/hero-1wide.jpg);
@@ -310,9 +319,8 @@ textarea{
 }
 
 .hero-image h2{
-    font-size: clamp(2.5rem, 0.5rem + 8vw, 5rem);
-    font-family: 'Just Another Hand', cursive;
-    letter-spacing: 3px;
+    font-size: clamp(2rem, -0.5rem + 8vw, 4rem);
+    font-family: 'Kalam', cursive;
     color: var(--drk-gry);
     transition: .5s;
 }
@@ -324,4 +332,25 @@ textarea{
                 12px 12px var(--lt-grn),
                 15px 15px var(--lt-prpl),
                 18px 18px 4px var(--lt-gry);
+}
+
+.about-me{
+    padding: 2rem;
+    max-width: 59rem;
+    margin: auto;
+}
+
+.sub-me{
+    padding: 2rem 0;
+}
+
+.about-me h2, .about-me h3{
+    font-family: 'Kalam', cursive;
+    letter-spacing: 3px;
+    color: var(--creamy);
+}
+
+.about-me p{
+    font-family: Cantarell;
+    color: var(--creamy);
 }
