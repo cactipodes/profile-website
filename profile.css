@@ -347,11 +347,47 @@ textarea{
 
 .about-me h2, .about-me h3{
     font-family: 'Kalam', cursive;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: var(--creamy);
 }
 
 .about-me p{
     font-family: Cantarell;
     color: var(--creamy);
+}
+
+/************************projects page**************************/
+
+.projects-grid, .demos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-gap: 1rem;
+    margin: auto;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.projects-grid img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.project-title h2, .demo-title h2 {
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
+    color: var(--creamy);
+    text-align: center;
+    padding-top: 4rem;
+}
+
+
+.project-child{
+    background-color: var(--gry);
+}
+
+.project-child:hover img {
+    opacity: 20%;
+    transition: .4s;
 }
