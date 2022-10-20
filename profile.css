@@ -213,7 +213,7 @@ footer p{
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 200px));
     grid-template-rows: 50px 100px 60px;
-    margin: 2rem;
+    margin: 1rem 2rem 2rem 2rem;
 }
 
 .top-left input{
@@ -272,15 +272,16 @@ textarea{
     font-weight: bolder;
     font-size: large;
     transition-duration: .3s;
+    
+}
+
+.contact-me button:hover{
+    background-color: var(--gry);
     box-shadow: 3px 3px var(--lt-oj),
                 6px 6px var(--lt-red),
                 9px 9px var(--lt-blu),
                 12px 12px var(--lt-grn),
                 15px 15px var(--lt-prpl);
-}
-
-.contact-me button:hover{
-    background-color: var(--gry);
 }
 
 .contact-me button:active{
@@ -297,7 +298,7 @@ textarea{
     font-family: 'Kalam', cursive;
     color: var(--creamy);
     letter-spacing: 3px;
-    font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
+    font-size: clamp(1.5rem, 0.625rem + 2vw, 1.75rem);
 }
 
 .full-form{
