@@ -374,6 +374,9 @@ textarea{
 
 /************************projects page**************************/
 
+.project-main{
+    padding-top: 2rem;
+}
 .projects-grid, .demos-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
@@ -407,14 +410,13 @@ textarea{
     height: 100%;
     width: 100%;
     object-fit: contain;
-
 }
 
 .project-title h2, .demo-title h2 {
     font-family: Cantarell;
     color: var(--creamy);
     text-align: center;
-    padding: 4rem 0 2rem 0;
+    padding: 2rem 0;
 }
 
 .project-child:hover, .demo-child:hover{
@@ -428,7 +430,7 @@ textarea{
 }
 
 .project-child:hover img, .demo-child:hover img{
-    opacity: 30%;
+    opacity: 25%;
     transition: .4s;
 }
 
@@ -444,4 +446,46 @@ textarea{
                 9px 9px var(--blu),
                 12px 12px var(--grn),
                 15px 15px var(--prpl);
+}
+
+/**************************musings page***********************/
+
+.musing-child h2, .musing-child p{
+    font-family: Cantarell;
+    color: var(--creamy);
+}
+
+.musing-child span{
+    font-family: 'Kalam', cursive;
+    letter-spacing: 1px;
+}
+
+.musing-entry{
+    display: grid;
+    grid-template-columns: minmax(380px, 800px);
+    padding: 2rem;
+    max-width: 59rem;
+    margin: auto;
+}
+
+.musing-child img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    max-width: 450px;
+}
+
+.m-3, .m-5{
+    position: relative;
+    margin: 2rem;
+}
+
+.m-3:hover img{
+    border: 8px solid var(--creamy);
+    box-shadow: 3px 3px var(--lt-oj),
+                6px 6px var(--lt-red),
+                9px 9px var(--lt-blu),
+                12px 12px var(--lt-grn),
+                15px 15px var(--lt-prpl);
+    transition: .4s ease;
 }
